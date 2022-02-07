@@ -34,6 +34,12 @@ do
 	esac
 done
 
+if [ -f $HOME/.backup_settings ]
+then
+        source $HOME/.backup_settings
+        BACKUP_PROMPT=""
+fi
+
 VARIANT_ID=$(grep VARIANT_ID /etc/os-release | sed 's/VARIANT_ID=//')
 if [ $VARIANT_ID = "silverblue" ]
 then
