@@ -20,12 +20,12 @@ function run_cmd()
 		$CMD_PREFIX $@
 	fi
 }
-
+BACKUP_PROMPT="yes"
 while getopts p opt
 do
 	case $opt in
-		p)
-			BACKUP_PROMPT="yes"
+		e)
+			BACKUP_PROMPT=""
 			;;
 		\?)
 			echo "fuck you doing???"
