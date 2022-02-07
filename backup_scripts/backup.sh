@@ -68,6 +68,8 @@ fi
 
 ERR=""
 
+echo $BACKUP_PROMPT
+
 if [ -z $BACKUP_LOCAL_DIR ]
 then
 	if [ -z $BACKUP_PROMPT ]
