@@ -8,7 +8,7 @@ function setup_toolbox()
 	then
 		return
 	fi
-	toolbox create
+	toolbox create -y
 }
 
 function run_cmd()
