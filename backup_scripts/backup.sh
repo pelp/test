@@ -111,7 +111,7 @@ then
 		echo "Please set BACKUP_REMOTE_HOST variable"
 		ERR="yes"
 	else
-		echo "Input exclude file:"
+		echo "Input remote host:"
 		read BACKUP_REMOTE_HOST
 	fi
 fi
@@ -123,7 +123,7 @@ then
 		echo "Please set BACKUP_REMOTE_USER variable"
 		ERR="yes"
 	else
-		echo "Input exclude file:"
+		echo "Input remote user:"
 		read BACKUP_REMOTE_USER
 	fi
 fi
