@@ -20,7 +20,7 @@ function run_cmd()
 		$CMD_PREFIX $@
 	fi
 }
-BACKUP_PROMT="yes"
+BACKUP_PROMPT="yes"
 while getopts p opt
 do
 	case $opt in
@@ -67,8 +67,6 @@ else
 fi
 
 ERR=""
-
-echo $BACKUP_PROMPT
 
 if [ -z $BACKUP_LOCAL_DIR ]
 then
