@@ -133,4 +133,4 @@ then
 	exit 0
 fi
 echo "All deps are met, starting backup"
-run_cmd "rsync -a --info=progress2 --exclude-from=$BACKUP_EXCLUDE_FILE $BACKUP_LOCAL_DIR $BACKUP_REMOTE_USER@$BACKUP_REMOTE_HOST:$BACKUP_REMOTE_DIR"
+run_cmd "rsync -aR --info=progress2 --exclude-from=$BACKUP_EXCLUDE_FILE $BACKUP_LOCAL_DIR $BACKUP_REMOTE_USER@$BACKUP_REMOTE_HOST:$BACKUP_REMOTE_DIR"
